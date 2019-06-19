@@ -189,13 +189,13 @@ Variables
 .container .headerimg {
   height: 250px;
 }
-.intro {
+.container .intro {
   text-align: center;
   margin-top: 25px;
 }
-.intro h1 {
+.container .intro h1 {
   font-size: 35px;
 }
-.intro h2 {
+.container .intro h2 {
   font-size: 25px;
 }
