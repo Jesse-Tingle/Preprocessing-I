@@ -133,11 +133,23 @@ table {
 html,
 body {
   height: 100%;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Barlow Condensed', sans-serif;
 }
 /******
 Variables
 ******/
+/******
+Mixins
+******/
+.heading {
+  font-size: 25px;
+  text-decoration: underline;
+  margin-bottom: 7px;
+}
+.list {
+  list-style-type: circle;
+  padding-left: 4%;
+}
 .container {
   padding-top: 25px;
   background-image: url(../images/grey.png);
@@ -159,6 +171,27 @@ Variables
 .container .left-background-section {
   background-color: #2a3a52;
   width: 25%;
+  display: flex;
+  flex-direction: column;
+}
+.container .left-background-section .img-section {
+  text-align: center;
+  padding-top: 20px;
+  padding-right: 2%;
+}
+.container .left-background-section #about-me h2 {
+  text-decoration: underline;
+  color: white;
+  font-size: 25px;
+  padding-left: 7%;
+  padding-bottom: 4%;
+}
+.container .left-background-section #about-me p {
+  color: white;
+  font-size: 17px;
+  line-height: 19px;
+  padding-left: 7%;
+  padding-right: 10%;
 }
 .container img {
   vertical-align: middle;
@@ -167,12 +200,74 @@ Variables
   height: 250px;
 }
 .container .intro {
-  text-align: center;
-  margin-top: 25px;
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  margin-left: 26%;
+  color: #2a3a52;
 }
 .container .intro h1 {
-  font-size: 35px;
+  font-size: 125px;
 }
 .container .intro h2 {
+  font-size: 30px;
+}
+.container .main-content {
+  padding-top: 24px;
+  padding-left: 2%;
+}
+.container .main-content #skills {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  margin-left: 26%;
+  margin-top: 160px;
+}
+.container .main-content #skills h2 {
   font-size: 25px;
+  text-decoration: underline;
+  margin-bottom: 7px;
+}
+.container .main-content #skills .skills-list {
+  list-style-type: circle;
+  padding-left: 13%;
+}
+.container .main-content #work-history {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  margin-left: 26%;
+  margin-top: 300px;
+}
+.container .main-content #work-history h2 {
+  font-size: 25px;
+  text-decoration: underline;
+  margin-bottom: 7px;
+}
+.container .main-content #work-history .job-one ul {
+  list-style-type: circle;
+  padding-left: 4%;
+}
+.fancy {
+  line-height: 0.5;
+}
+.fancy span {
+  display: inline-block;
+  position: relative;
+}
+.fancy span:after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  border-block-end: 12px solid #2a3a52;
+  top: 1px;
+  width: 381px;
+}
+.fancy span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+.fancy span:after {
+  left: 100%;
+  margin-left: 15px;
 }

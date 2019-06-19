@@ -55,7 +55,7 @@ table {
 
 html, body {
 	height: 100%;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Barlow Condensed', sans-serif;
 }
 
 //my code is below
@@ -65,6 +65,24 @@ Variables
 ******/
 
 @blue-theme: #2a3a52;
+
+/******
+Mixins
+******/
+
+.heading {
+	font-size: 25px;
+    text-decoration: underline;
+    margin-bottom: 7px;
+}
+
+.list {
+	list-style-type: circle;
+	padding-left: 4%;
+}
+
+
+
 
 .container {
 	padding-top: 25px;
@@ -91,6 +109,48 @@ Variables
 	.left-background-section {
 		background-color: @blue-theme;
 		width: 25%;
+		display: flex;
+		flex-direction: column;
+
+		.img-section {
+			text-align: center;
+			padding-top: 20px;
+			padding-right: 2%;
+		}
+
+		#about-me{
+			
+			h2 {
+				text-decoration: underline;
+				color: white;
+				font-size: 25px;
+				padding-left: 7%;
+				padding-bottom: 4%;
+			}
+
+			p {
+				color: white;
+				font-size: 17px;
+				line-height: 19px;
+				padding-left: 7%;
+				padding-right: 10%;
+			}
+		}
+
+		#contact {
+
+			h2 {
+
+			}
+
+			h3 {
+
+			}
+
+			ul {
+
+			}
+		}
 	}
 
 	  
@@ -103,17 +163,90 @@ Variables
 	}
 
 	.intro {
-		text-align: center;
-		margin-top: 25px;
+		display: flex;
+    	position: absolute;
+    	flex-direction: column;
+		margin-left: 26%;
+		color: @blue-theme;
 	
 		h1 {
-			font-size: 35px;
+			font-size: 125px;
 		}
 	
 		h2 {
-			font-size: 25px;
+			font-size: 30px;
 		}
+
 	}
 
+	.main-content {
+		padding-top: 24px;
+		padding-left: 2%;
+
+		#skills {
+			display: flex;
+			flex-direction: column;
+			position: absolute;
+			margin-left: 26%;
+			margin-top: 160px;
+	
+			h2 {
+				.heading();
+			}
+	
+			.skills-list {
+				list-style-type: circle;
+				padding-left: 13%;
+			}
+		}
+	
+		#work-history {
+			display: flex;
+			flex-direction: column;
+			position: absolute;
+			margin-left: 26%;
+			margin-top: 300px;
+	
+			h2 {
+				.heading();
+			}
+
+			.job-one {
+
+				ul {
+					.list();
+				}
+			}
+		}
+	}
+	
 }
 
+
+
+.fancy {
+	line-height: 0.5;
+	// text-align: center;
+  }
+  .fancy span {
+	display: inline-block;
+	position: relative;  
+  }
+  
+  .fancy span:after {
+	content: "";
+    position: absolute;
+    height: 5px;
+    border-block-end: 12px solid #2a3a52;
+    top: 1px;
+    width: 381px;
+	
+  }
+  .fancy span:before {
+	right: 100%;
+	margin-right: 15px;
+  }
+  .fancy span:after {
+	left: 100%;
+	margin-left: 15px;
+  }
