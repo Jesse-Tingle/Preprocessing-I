@@ -60,19 +60,60 @@ html, body {
 
 //my code is below
 
+/******
+Variables
+******/
+
+@blue-theme: #00bcd4;
+
+.container {
+	margin-top: 25px;
+
+	.img-section {
+		display: block;
+		overflow: hidden;
+		text-align: center;
+	  }
+	.img-section:before, 
+	.img-section:after {
+		content: "";
+		display: inline-block;
+		vertical-align: middle;
+		position: relative;
+		width: 50%;
+		border-top-style: solid;
+		border-top-width: 80px;
+		color: @blue-theme;
+	}
+	
+	.img-section:before {
+		right: 0.5em;
+		margin-left: -50%;
+	}
+	
+	.img-section:after {
+		left: 0.5em;
+		margin-right: -50%;
+	}
+	  
+	img {
+		vertical-align: middle;
+	}
+
+	.headerimg {
+		height: 250px;
+	}
+}
+
 .intro {
 	text-align: center;
 	margin-top: 25px;
-}
 
-.intro h1 {
-	font-size: 35px;
-}
+	h1 {
+		font-size: 35px;
+	}
 
-.intro h2 {
-	font-size: 25px;
-}
-
-.headerimg {
-	height: 250px;
+	h2 {
+		font-size: 25px;
+	}
 }
