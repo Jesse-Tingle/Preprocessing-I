@@ -167,6 +167,7 @@ Mixins
   text-decoration: none;
   color: #000000;
   border-bottom: dotted 1px;
+  font-size: 20px;
 }
 .container .left-background-section {
   background-color: #2a3a52;
@@ -179,19 +180,43 @@ Mixins
   padding-top: 20px;
   padding-right: 2%;
 }
-.container .left-background-section #about-me h2 {
+.container .left-background-section .sidebar-content {
+  padding-top: 20px;
+  padding-left: 4%;
+  padding-right: 10%;
+}
+.container .left-background-section .sidebar-content #about-me h2 {
   text-decoration: underline;
   color: white;
   font-size: 25px;
-  padding-left: 7%;
   padding-bottom: 4%;
 }
-.container .left-background-section #about-me p {
+.container .left-background-section .sidebar-content #about-me p {
   color: white;
   font-size: 17px;
   line-height: 19px;
-  padding-left: 7%;
   padding-right: 10%;
+}
+.container .left-background-section .sidebar-content #contact h2 {
+  text-decoration: underline;
+  color: white;
+  font-size: 25px;
+  padding-bottom: 4%;
+  padding-top: 15px;
+}
+.container .left-background-section .sidebar-content #contact p {
+  font-size: 17px;
+  color: white;
+}
+.container .left-background-section .sidebar-content #contact p a {
+  -moz-transition: border-bottom-color 0.25s ease-in-out;
+  -webkit-transition: border-bottom-color 0.25s ease-in-out;
+  -ms-transition: border-bottom-color 0.25s ease-in-out;
+  transition: border-bottom-color 0.25s ease-in-out;
+  text-decoration: none;
+  color: white;
+  border-bottom: dotted 1px;
+  font-size: 20px;
 }
 .container img {
   vertical-align: middle;

@@ -102,6 +102,7 @@ Mixins
 				text-decoration: none;
 				color: #000000;
 				border-bottom: dotted 1px;
+				font-size: 20px;
 			}
 		}
 	}
@@ -118,38 +119,68 @@ Mixins
 			padding-right: 2%;
 		}
 
-		#about-me{
-			
-			h2 {
-				text-decoration: underline;
-				color: white;
-				font-size: 25px;
-				padding-left: 7%;
-				padding-bottom: 4%;
+		.sidebar-content {
+			padding-top: 20px;
+			padding-left: 4%;
+			padding-right: 10%;
+
+			#about-me{
+				
+				h2 {
+					text-decoration: underline;
+					color: white;
+					font-size: 25px;
+					padding-bottom: 4%;
+				}
+
+				h3 {
+
+				}
+
+				p {
+					color: white;
+					font-size: 17px;
+					line-height: 19px;
+					padding-right: 10%;
+				}
 			}
 
-			p {
-				color: white;
-				font-size: 17px;
-				line-height: 19px;
-				padding-left: 7%;
-				padding-right: 10%;
+			#contact {
+
+				h2 {
+					text-decoration: underline;
+					color: white;
+					font-size: 25px;
+					padding-bottom: 4%;
+					padding-top: 15px;
+				}
+
+				h3 {
+
+				}
+
+				p {
+					font-size: 17px;
+					color: white;
+	
+					a {
+					
+						-moz-transition: border-bottom-color 0.25s ease-in-out;
+						-webkit-transition: border-bottom-color 0.25s ease-in-out;
+						-ms-transition: border-bottom-color 0.25s ease-in-out;
+						transition: border-bottom-color 0.25s ease-in-out;
+						text-decoration: none;
+						color: white;
+						border-bottom: dotted 1px;
+						font-size: 20px;
+					}
+				}
+
+				ul {
+
+				}
 			}
-		}
 
-		#contact {
-
-			h2 {
-
-			}
-
-			h3 {
-
-			}
-
-			ul {
-
-			}
 		}
 	}
 
