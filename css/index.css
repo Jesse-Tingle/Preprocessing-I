@@ -164,6 +164,11 @@ Mixins
   padding-top: 25px;
   background-image: url(../images/grey.png);
 }
+@media (max-width: 500px) {
+  .container {
+    padding-top: 15px;
+  }
+}
 .container header nav {
   display: flex;
   justify-content: space-around;
@@ -173,6 +178,7 @@ Mixins
   .container header nav {
     flex-direction: column;
     width: 12%;
+    padding-bottom: 5px;
   }
 }
 .container header nav a {
@@ -193,6 +199,11 @@ Mixins
   margin-left: 32%;
   color: #2a3a52;
 }
+@media (max-width: 500px) {
+  .container .intro {
+    margin-left: 36%;
+  }
+}
 .container .intro h1 {
   font-size: 125px;
 }
@@ -201,8 +212,18 @@ Mixins
     font-size: 100px;
   }
 }
+@media (max-width: 500px) {
+  .container .intro h1 {
+    font-size: 60px;
+  }
+}
 .container .intro h2 {
   font-size: 30px;
+}
+@media (max-width: 500px) {
+  .container .intro h2 {
+    font-size: 25px;
+  }
 }
 .container .intro .fancy {
   line-height: 0.5;
@@ -224,6 +245,12 @@ Mixins
     width: 266px;
   }
 }
+@media (max-width: 500px) {
+  .container .intro .fancy span:after {
+    width: 111px;
+    border-block-end: 7px solid #2a3a52;
+  }
+}
 .container .intro .fancy span:before {
   right: 100%;
   margin-right: 15px;
@@ -241,6 +268,11 @@ Mixins
     padding-top: 20px;
   }
 }
+@media (max-width: 500px) {
+  .container .main-content {
+    padding-top: 11px;
+  }
+}
 .container .main-content .skills-ed {
   display: flex;
   flex-wrap: wrap;
@@ -250,10 +282,23 @@ Mixins
   padding-left: 26%;
   padding-top: 165px;
 }
+@media (max-width: 500px) {
+  .container .main-content .skills-ed {
+    flex-direction: column;
+    position: absolute;
+    padding-left: 32%;
+    padding-top: 90px;
+  }
+}
 .container .main-content .skills-ed #skills h2 {
   font-size: 25px;
   text-decoration: underline;
   margin-bottom: 7px;
+}
+@media (max-width: 500px) {
+  .container .main-content .skills-ed #skills h2 {
+    font-size: 20px;
+  }
 }
 .container .main-content .skills-ed #skills .skills-list {
   list-style-type: circle;
@@ -261,14 +306,35 @@ Mixins
   font-size: 19px;
   line-height: 25px;
 }
+@media (max-width: 500px) {
+  .container .main-content .skills-ed #skills .skills-list {
+    font-size: 15px;
+    line-height: 22px;
+  }
+}
+@media (max-width: 500px) {
+  .container .main-content .skills-ed .education {
+    padding-top: 10px;
+  }
+}
 .container .main-content .skills-ed .education h2 {
   font-size: 25px;
   text-decoration: underline;
   margin-bottom: 7px;
 }
+@media (max-width: 500px) {
+  .container .main-content .skills-ed .education h2 {
+    font-size: 20px;
+  }
+}
 .container .main-content .skills-ed .education .years {
   font-size: 19px;
   padding-top: 10px;
+}
+@media (max-width: 500px) {
+  .container .main-content .skills-ed .education .years {
+    font-size: 17px;
+  }
 }
 .container .main-content .skills-ed .education .years .name {
   font-weight: bold;
@@ -280,16 +346,42 @@ Mixins
   margin-left: 26%;
   margin-top: 315px;
 }
+@media (max-width: 500px) {
+  .container .main-content #work-history {
+    margin-left: 32%;
+    margin-top: 355px;
+  }
+}
 .container .main-content #work-history .job-title {
   padding-top: 20px;
+}
+@media (max-width: 500px) {
+  .container .main-content #work-history .job-title {
+    padding-top: 10px;
+  }
 }
 .container .main-content #work-history h2 {
   font-size: 25px;
   text-decoration: underline;
   margin-bottom: 7px;
 }
+@media (max-width: 500px) {
+  .container .main-content #work-history h2 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .container .main-content #work-history .job {
+    padding-top: 20px;
+  }
+}
 .container .main-content #work-history .job h3 {
   font-size: 21px;
+}
+@media (max-width: 500px) {
+  .container .main-content #work-history .job h3 {
+    font-size: 17px;
+  }
 }
 .container .main-content #work-history .job .years {
   display: flex;
@@ -303,6 +395,11 @@ Mixins
 @media (max-width: 800px) {
   .container .main-content #work-history .job .years {
     width: 65%;
+  }
+}
+@media (max-width: 500px) {
+  .container .main-content #work-history .job .years {
+    width: 92%;
   }
 }
 .container .main-content #work-history .job .years .vl {
@@ -322,6 +419,15 @@ Mixins
   font-size: 19px;
   line-height: 25px;
 }
+@media (max-width: 500px) {
+  .container .main-content #work-history .job ul {
+    width: 75%;
+    font-size: 15px;
+    line-height: 24px;
+    padding-left: 8%;
+    padding-bottom: 20px;
+  }
+}
 .container .main-content #work-history .job .two {
   width: 30%;
 }
@@ -330,8 +436,18 @@ Mixins
     width: 33%;
   }
 }
+@media (max-width: 500px) {
+  .container .main-content #work-history .job .two {
+    width: 48%;
+  }
+}
 .container .headerimg {
   height: 250px;
+}
+@media (max-width: 500px) {
+  .container .headerimg {
+    height: 175px;
+  }
 }
 .container .left-background-section {
   background-color: #2a3a52;
@@ -343,6 +459,12 @@ Mixins
 @media (max-width: 800px) {
   .container .left-background-section {
     height: 1134px;
+  }
+}
+@media (max-width: 500px) {
+  .container .left-background-section {
+    width: 35%;
+    height: 1330px;
   }
 }
 .container .left-background-section .img-section {
@@ -369,6 +491,11 @@ Mixins
   font-size: 19px;
   line-height: 19px;
   padding-right: 10%;
+}
+@media (max-width: 500px) {
+  .container .left-background-section .sidebar-content #about-me p {
+    font-size: 18px;
+  }
 }
 .container .left-background-section .sidebar-content #contact {
   display: flex;
@@ -415,6 +542,17 @@ Mixins
   padding-top: 12px;
   padding-bottom: 40px;
 }
+@media (max-width: 500px) {
+  .container .left-background-section .sidebar-content #contact .icons .fa {
+    font-size: 35px;
+    width: 30%;
+  }
+}
 .container .left-background-section .sidebar-content #contact .icons a {
   border-bottom: none;
+}
+@media (max-width: 500px) {
+  .container footer {
+    font-size: 14px;
+  }
 }

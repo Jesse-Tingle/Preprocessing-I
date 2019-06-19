@@ -97,7 +97,11 @@ Mixins
 
 .container {
 	padding-top: 25px;
-	background-image: url(../images/grey.png); 
+	background-image: url(../images/grey.png);
+	
+	@media (max-width: 500px) {
+		padding-top: 15px;
+	}
 
 	header {
 		nav {
@@ -108,6 +112,7 @@ Mixins
 			@media (max-width: 500px) {
 				flex-direction: column;
 				width: 12%;
+				padding-bottom: 5px;
 			}
 
 			a {
@@ -124,6 +129,10 @@ Mixins
     	flex-direction: column;
 		margin-left: 32%;
 		color: @blue-theme;
+
+		@media (max-width: 500px) {
+			margin-left: 36%;
+		}
 	
 		h1 {
 			font-size: 125px;
@@ -131,15 +140,22 @@ Mixins
 			@media (max-width: 800px) {
 				font-size: 100px;
 			}
+
+			@media (max-width: 500px) {
+				font-size: 60px;
+			}
 		}
 	
 		h2 {
 			font-size: 30px;
+
+			@media (max-width: 500px) {
+				font-size: 25px;
+			}
 		}
 
 		.fancy {
 			line-height: 0.5;
-			// text-align: center;
 		}
 		
 		.fancy span {
@@ -157,6 +173,11 @@ Mixins
 
 			@media (max-width: 800px) {
 				width: 266px;
+			}
+
+			@media (max-width: 500px) {
+				width: 111px;
+				border-block-end: 7px solid #2a3a52;
 			}
 			
 		}
@@ -180,6 +201,10 @@ Mixins
 			padding-top: 20px;
 		}
 
+		@media (max-width: 500px) {
+			padding-top: 11px;
+		}
+
 		.skills-ed {
 			display: flex;
 			flex-wrap: wrap;
@@ -189,15 +214,21 @@ Mixins
 			padding-left: 26%;
 			padding-top: 165px;
 
+			@media (max-width: 500px) {
+				flex-direction: column;
+				position: absolute;
+				padding-left: 32%;
+				padding-top: 90px;
+			}
+
 			#skills {
-				// display: flex;
-				// flex-direction: column;
-				// position: absolute;
-				// margin-left: 26%;
-				// margin-top: 160px;
 		
 				h2 {
 					.heading();
+
+					@media (max-width: 500px) {
+						font-size: 20px;
+					}
 				}
 		
 				.skills-list {
@@ -205,19 +236,37 @@ Mixins
 					padding-left: 25%;
 					font-size: 19px;
 					line-height: 25px;
+
+					@media (max-width: 500px) {
+						font-size: 15px;
+    					line-height: 22px;
+					}
 				}
 			}
 
 			.education {
+
+				@media (max-width: 500px) {
+					padding-top: 10px;	
+				}
+
 				h2 {
 					font-size: 25px;
     				text-decoration: underline;
-    				margin-bottom: 7px;
+					margin-bottom: 7px;
+					
+					@media (max-width: 500px) {
+						font-size: 20px;
+					}
 				}
 
 				.years {
 					font-size: 19px;
 					padding-top: 10px;
+
+					@media (max-width: 500px) {
+						font-size: 17px;
+					}
 
 					.name {
 						font-weight: bold;
@@ -233,19 +282,40 @@ Mixins
 			position: absolute;
 			margin-left: 26%;
 			margin-top: 315px;
+
+			@media (max-width: 500px) {
+				margin-left: 32%;
+				margin-top: 355px;
+			}
 			
 			.job-title {
-			 	padding-top: 20px;
+				 padding-top: 20px;
+				 
+				 @media (max-width: 500px) {
+					 padding-top: 10px;
+				 }
 			}
 
 			h2 {
 				.heading();
+
+				@media (max-width: 500px) {
+					font-size: 20px;
+				}
 			}
 
 			.job {
 				
+				@media (max-width: 500px) {
+					padding-top: 20px;
+				}
+
 				h3 {
 					font-size: 21px;
+
+					@media (max-width: 500px) {
+						font-size: 17px;
+					}
 				}
 
 				.years {
@@ -261,6 +331,10 @@ Mixins
 						width: 65%;
 					}
 					
+					@media (max-width: 500px) {
+						width: 92%;
+					}
+
 					h3 {
 
 					}
@@ -273,6 +347,10 @@ Mixins
 						.list();
 						width: 77%;
 						font-size: 19px;
+
+						@media (max-width: 500px) {
+							
+						}
 					}
 				}
 
@@ -286,6 +364,14 @@ Mixins
 					padding-top: 10px;
 					font-size: 19px;
 					line-height: 25px;
+
+					@media (max-width: 500px) {
+						width: 75%;
+						font-size: 15px;
+						line-height: 24px;
+						padding-left: 8%;
+						padding-bottom: 20px;
+					}
 				}
 
 				.two {
@@ -293,6 +379,10 @@ Mixins
 
 					@media (max-width: 800px) {
 						width: 33%;
+					}
+
+					@media (max-width: 500px) {
+						width: 48%;
 					}
 				}
 			}
@@ -302,6 +392,10 @@ Mixins
 
 	.headerimg {
 		height: 250px;
+
+		@media (max-width: 500px) {
+			height: 175px;
+		}
 	}
 
 	.left-background-section {
@@ -315,6 +409,11 @@ Mixins
 			height: 1134px;
 		}
 
+		@media (max-width: 500px) {
+			width: 35%;
+			height: 1330px;
+		}
+
 		.img-section {
 			text-align: center;
 			padding-top: 20px;
@@ -326,7 +425,7 @@ Mixins
 			padding-left: 4%;
 			padding-right: 10%;
 
-			#about-me{
+			#about-me {
 				
 				padding-top: 20px;
 
@@ -337,15 +436,15 @@ Mixins
 					padding-bottom: 4%;
 				}
 
-				h3 {
-
-				}
-
 				p {
 					color: white;
 					font-size: 19px;
 					line-height: 19px;
 					padding-right: 10%;
+
+					@media (max-width: 500px) {
+						font-size: 18px;
+					}
 				}
 			}
 
@@ -365,10 +464,6 @@ Mixins
 					@media (max-width: 800px) {
 						padding-top: 70px;
 					}
-				}
-
-				h3 {
-
 				}
 
 				.fa {
@@ -396,18 +491,26 @@ Mixins
 						width: 32%;
 						padding-top: 12px;
 						padding-bottom: 40px;
+
+						@media (max-width: 500px) {
+							font-size: 35px;
+    						width: 30%;
+						}
 					}
 
 					a {
 						border-bottom: none;
 					}
 				}
-				ul {
-
-				}
+				
 			}
 
 		}
 	}
-	
+
+	footer {
+		@media (max-width: 500px) {
+			font-size: 14px;
+		}
+	}
 }
