@@ -103,7 +103,7 @@ Mixins
 		nav {
 			display: flex;
 			justify-content: space-around;
-			width: 35%;
+			width: 31%;
 
 			a {
 				.link-style();
@@ -163,29 +163,59 @@ Mixins
 		padding-top: 24px;
 		padding-left: 8%;
 
-		#skills {
+		.skills-ed {
 			display: flex;
-			flex-direction: column;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			width: 60%;
 			position: absolute;
-			margin-left: 26%;
-			margin-top: 160px;
-	
-			h2 {
-				.heading();
+			padding-left: 26%;
+			padding-top: 165px;
+
+			#skills {
+				// display: flex;
+				// flex-direction: column;
+				// position: absolute;
+				// margin-left: 26%;
+				// margin-top: 160px;
+		
+				h2 {
+					.heading();
+				}
+		
+				.skills-list {
+					list-style-type: circle;
+					padding-left: 25%;
+					font-size: 19px;
+					line-height: 25px;
+				}
 			}
-	
-			.skills-list {
-				list-style-type: circle;
-				padding-left: 25%;
+
+			.education {
+				h2 {
+					font-size: 25px;
+    				text-decoration: underline;
+    				margin-bottom: 7px;
+				}
+
+				.years {
+					font-size: 19px;
+					padding-top: 10px;
+
+					.name {
+						font-weight: bold;
+					}
+				}
 			}
 		}
+		
 	
 		#work-history {
 			display: flex;
 			flex-direction: column;
 			position: absolute;
 			margin-left: 26%;
-			margin-top: 300px;
+			margin-top: 315px;
 			
 			.job-title {
 			 	padding-top: 20px;
@@ -220,7 +250,8 @@ Mixins
 
 					ul {
 						.list();
-						
+						width: 77%;
+						font-size: 19px;
 					}
 				}
 
@@ -232,6 +263,8 @@ Mixins
 					.list();
 					width: 69%;
 					padding-top: 10px;
+					font-size: 19px;
+					line-height: 25px;
 				}
 
 				.two {
@@ -251,7 +284,7 @@ Mixins
 		width: 30%;
 		display: flex;
 		flex-direction: column;
-		height: 799px;
+		height: 1014px;
 
 		.img-section {
 			text-align: center;

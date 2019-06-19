@@ -167,7 +167,7 @@ Mixins
 .container header nav {
   display: flex;
   justify-content: space-around;
-  width: 35%;
+  width: 31%;
 }
 .container header nav a {
   -moz-transition: border-bottom-color 0.25s ease-in-out;
@@ -220,28 +220,44 @@ Mixins
   padding-top: 24px;
   padding-left: 8%;
 }
-.container .main-content #skills {
+.container .main-content .skills-ed {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 60%;
   position: absolute;
-  margin-left: 26%;
-  margin-top: 160px;
+  padding-left: 26%;
+  padding-top: 165px;
 }
-.container .main-content #skills h2 {
+.container .main-content .skills-ed #skills h2 {
   font-size: 25px;
   text-decoration: underline;
   margin-bottom: 7px;
 }
-.container .main-content #skills .skills-list {
+.container .main-content .skills-ed #skills .skills-list {
   list-style-type: circle;
   padding-left: 25%;
+  font-size: 19px;
+  line-height: 25px;
+}
+.container .main-content .skills-ed .education h2 {
+  font-size: 25px;
+  text-decoration: underline;
+  margin-bottom: 7px;
+}
+.container .main-content .skills-ed .education .years {
+  font-size: 19px;
+  padding-top: 10px;
+}
+.container .main-content .skills-ed .education .years .name {
+  font-weight: bold;
 }
 .container .main-content #work-history {
   display: flex;
   flex-direction: column;
   position: absolute;
   margin-left: 26%;
-  margin-top: 300px;
+  margin-top: 315px;
 }
 .container .main-content #work-history .job-title {
   padding-top: 20px;
@@ -269,12 +285,16 @@ Mixins
 .container .main-content #work-history .job .years ul {
   list-style-type: circle;
   padding-left: 4%;
+  width: 77%;
+  font-size: 19px;
 }
 .container .main-content #work-history .job ul {
   list-style-type: circle;
   padding-left: 4%;
   width: 69%;
   padding-top: 10px;
+  font-size: 19px;
+  line-height: 25px;
 }
 .container .main-content #work-history .job .two {
   width: 30%;
@@ -287,7 +307,7 @@ Mixins
   width: 30%;
   display: flex;
   flex-direction: column;
-  height: 799px;
+  height: 1014px;
 }
 .container .left-background-section .img-section {
   text-align: center;
