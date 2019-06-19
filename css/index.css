@@ -150,6 +150,16 @@ Mixins
   list-style-type: circle;
   padding-left: 4%;
 }
+.link-style {
+  -moz-transition: border-bottom-color 0.25s ease-in-out;
+  -webkit-transition: border-bottom-color 0.25s ease-in-out;
+  -ms-transition: border-bottom-color 0.25s ease-in-out;
+  transition: border-bottom-color 0.25s ease-in-out;
+  text-decoration: none;
+  color: white;
+  border-bottom: dotted 1px;
+  font-size: 20px;
+}
 .container {
   padding-top: 25px;
   background-image: url(../images/grey.png);
@@ -165,13 +175,14 @@ Mixins
   -ms-transition: border-bottom-color 0.25s ease-in-out;
   transition: border-bottom-color 0.25s ease-in-out;
   text-decoration: none;
-  color: #000000;
+  color: white;
   border-bottom: dotted 1px;
   font-size: 20px;
+  color: black;
 }
 .container .left-background-section {
   background-color: #2a3a52;
-  width: 25%;
+  width: 30%;
   display: flex;
   flex-direction: column;
 }
@@ -197,6 +208,10 @@ Mixins
   line-height: 19px;
   padding-right: 10%;
 }
+.container .left-background-section .sidebar-content #contact {
+  display: flex;
+  flex-direction: column;
+}
 .container .left-background-section .sidebar-content #contact h2 {
   text-decoration: underline;
   color: white;
@@ -204,11 +219,17 @@ Mixins
   padding-bottom: 4%;
   padding-top: 15px;
 }
-.container .left-background-section .sidebar-content #contact p {
-  font-size: 17px;
+.container .left-background-section .sidebar-content #contact .fa {
+  line-height: 40px;
   color: white;
 }
-.container .left-background-section .sidebar-content #contact p a {
+.container .left-background-section .sidebar-content #contact .fa-map-marker:before {
+  padding-right: 8%;
+}
+.container .left-background-section .sidebar-content #contact .fa-envelope:before {
+  padding-right: 5%;
+}
+.container .left-background-section .sidebar-content #contact a {
   -moz-transition: border-bottom-color 0.25s ease-in-out;
   -webkit-transition: border-bottom-color 0.25s ease-in-out;
   -ms-transition: border-bottom-color 0.25s ease-in-out;
@@ -217,6 +238,17 @@ Mixins
   color: white;
   border-bottom: dotted 1px;
   font-size: 20px;
+  font-size: 17px;
+}
+.container .left-background-section .sidebar-content #contact .icons .fa {
+  font-size: 50px;
+  justify-content: space-between;
+  width: 32%;
+  padding-top: 12px;
+  padding-bottom: 40px;
+}
+.container .left-background-section .sidebar-content #contact .icons a {
+  border-bottom: none;
 }
 .container img {
   vertical-align: middle;
@@ -228,7 +260,7 @@ Mixins
   display: flex;
   position: absolute;
   flex-direction: column;
-  margin-left: 26%;
+  margin-left: 32%;
   color: #2a3a52;
 }
 .container .intro h1 {
@@ -239,7 +271,7 @@ Mixins
 }
 .container .main-content {
   padding-top: 24px;
-  padding-left: 2%;
+  padding-left: 8%;
 }
 .container .main-content #skills {
   display: flex;
@@ -255,7 +287,7 @@ Mixins
 }
 .container .main-content #skills .skills-list {
   list-style-type: circle;
-  padding-left: 13%;
+  padding-left: 25%;
 }
 .container .main-content #work-history {
   display: flex;
@@ -268,6 +300,21 @@ Mixins
   font-size: 25px;
   text-decoration: underline;
   margin-bottom: 7px;
+}
+.container .main-content #work-history .job-one .years {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  font-size: 21px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+.container .main-content #work-history .job-one .years .vl {
+  border-left: 2px solid #2a3a52;
+}
+.container .main-content #work-history .job-one .years ul {
+  list-style-type: circle;
+  padding-left: 4%;
 }
 .container .main-content #work-history .job-one ul {
   list-style-type: circle;

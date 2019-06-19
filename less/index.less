@@ -81,6 +81,17 @@ Mixins
 	padding-left: 4%;
 }
 
+.link-style {
+	-moz-transition: border-bottom-color 0.25s ease-in-out;
+    -webkit-transition: border-bottom-color 0.25s ease-in-out;
+    -ms-transition: border-bottom-color 0.25s ease-in-out;
+    transition: border-bottom-color 0.25s ease-in-out;
+    text-decoration: none;
+    color: white;
+    border-bottom: dotted 1px;
+    font-size: 20px;
+}
+
 
 
 
@@ -95,21 +106,15 @@ Mixins
 			width: 35%;
 
 			a {
-				-moz-transition: border-bottom-color 0.25s ease-in-out;
-				-webkit-transition: border-bottom-color 0.25s ease-in-out;
-				-ms-transition: border-bottom-color 0.25s ease-in-out;
-				transition: border-bottom-color 0.25s ease-in-out;
-				text-decoration: none;
-				color: #000000;
-				border-bottom: dotted 1px;
-				font-size: 20px;
+				.link-style();
+				color: black;
 			}
 		}
 	}
 
 	.left-background-section {
 		background-color: @blue-theme;
-		width: 25%;
+		width: 30%;
 		display: flex;
 		flex-direction: column;
 
@@ -147,6 +152,9 @@ Mixins
 
 			#contact {
 
+				display: flex;
+				flex-direction: column;
+
 				h2 {
 					text-decoration: underline;
 					color: white;
@@ -159,23 +167,37 @@ Mixins
 
 				}
 
-				p {
-					font-size: 17px;
+				.fa {
+					line-height: 40px;
 					color: white;
-	
-					a {
-					
-						-moz-transition: border-bottom-color 0.25s ease-in-out;
-						-webkit-transition: border-bottom-color 0.25s ease-in-out;
-						-ms-transition: border-bottom-color 0.25s ease-in-out;
-						transition: border-bottom-color 0.25s ease-in-out;
-						text-decoration: none;
-						color: white;
-						border-bottom: dotted 1px;
-						font-size: 20px;
-					}
 				}
 
+				.fa-map-marker:before {
+					padding-right: 8%;
+				}
+
+				.fa-envelope:before {
+					padding-right: 5%;
+				}
+
+				a {
+					.link-style();
+					font-size: 17px;
+				}
+
+				.icons {
+					.fa {
+						font-size: 50px;
+						justify-content: space-between;
+						width: 32%;
+						padding-top: 12px;
+						padding-bottom: 40px;
+					}
+
+					a {
+						border-bottom: none;
+					}
+				}
 				ul {
 
 				}
@@ -197,7 +219,7 @@ Mixins
 		display: flex;
     	position: absolute;
     	flex-direction: column;
-		margin-left: 26%;
+		margin-left: 32%;
 		color: @blue-theme;
 	
 		h1 {
@@ -212,7 +234,7 @@ Mixins
 
 	.main-content {
 		padding-top: 24px;
-		padding-left: 2%;
+		padding-left: 8%;
 
 		#skills {
 			display: flex;
@@ -227,7 +249,7 @@ Mixins
 	
 			.skills-list {
 				list-style-type: circle;
-				padding-left: 13%;
+				padding-left: 25%;
 			}
 		}
 	
@@ -243,11 +265,43 @@ Mixins
 			}
 
 			.job-one {
+				
+				h3 {
+
+				}
+
+				.years {
+					display: flex;
+    				justify-content: space-between;
+    				width: 60%;
+    				font-size: 21px;
+    				padding-top: 4px;
+    				padding-bottom: 4px;
+					
+					h3 {
+
+					}
+
+					.vl {
+						border-left: 2px solid @blue-theme;
+					}
+
+					ul {
+						.list();
+					}
+				}
+
+				p {
+
+				}
 
 				ul {
 					.list();
 				}
+
 			}
+
+
 		}
 	}
 	
