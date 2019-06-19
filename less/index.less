@@ -64,7 +64,7 @@ html, body {
 Variables
 ******/
 
-@blue-theme: #00bcd4;
+@blue-theme: #2a3a52;
 
 .container {
 	padding-top: 25px;
@@ -75,9 +75,6 @@ Variables
 			display: flex;
 			justify-content: space-around;
 			width: 35%;
-			position: absolute;
-			top: 144px;
-			z-index: 1;
 
 			a {
 				-moz-transition: border-bottom-color 0.25s ease-in-out;
@@ -91,32 +88,11 @@ Variables
 		}
 	}
 
-	.img-section {
-		display: block;
-		overflow: hidden;
-		text-align: center;
-	  }
-	.img-section:before, 
-	.img-section:after {
-		content: "";
-		display: inline-block;
-		vertical-align: middle;
-		position: relative;
-		width: 50%;
-		border-top-style: solid;
-		border-top-width: 80px;
-		color: @blue-theme;
+	.left-background-section {
+		background-color: @blue-theme;
+		width: 25%;
 	}
-	
-	.img-section:before {
-		right: 0.5em;
-		margin-left: -50%;
-	}
-	
-	.img-section:after {
-		left: 0.5em;
-		margin-right: -50%;
-	}
+
 	  
 	img {
 		vertical-align: middle;

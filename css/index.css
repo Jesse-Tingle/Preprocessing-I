@@ -146,9 +146,6 @@ Variables
   display: flex;
   justify-content: space-around;
   width: 35%;
-  position: absolute;
-  top: 144px;
-  z-index: 1;
 }
 .container header nav a {
   -moz-transition: border-bottom-color 0.25s ease-in-out;
@@ -159,29 +156,9 @@ Variables
   color: #000000;
   border-bottom: dotted 1px;
 }
-.container .img-section {
-  display: block;
-  overflow: hidden;
-  text-align: center;
-}
-.container .img-section:before,
-.container .img-section:after {
-  content: "";
-  display: inline-block;
-  vertical-align: middle;
-  position: relative;
-  width: 50%;
-  border-top-style: solid;
-  border-top-width: 80px;
-  color: #00bcd4;
-}
-.container .img-section:before {
-  right: 0.5em;
-  margin-left: -50%;
-}
-.container .img-section:after {
-  left: 0.5em;
-  margin-right: -50%;
+.container .left-background-section {
+  background-color: #2a3a52;
+  width: 25%;
 }
 .container img {
   vertical-align: middle;
