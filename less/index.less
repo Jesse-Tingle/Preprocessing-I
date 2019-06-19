@@ -105,6 +105,11 @@ Mixins
 			justify-content: space-around;
 			width: 31%;
 
+			@media (max-width: 500px) {
+				flex-direction: column;
+				width: 12%;
+			}
+
 			a {
 				.link-style();
 				color: black;
@@ -122,6 +127,10 @@ Mixins
 	
 		h1 {
 			font-size: 125px;
+
+			@media (max-width: 800px) {
+				font-size: 100px;
+			}
 		}
 	
 		h2 {
@@ -145,6 +154,10 @@ Mixins
 			border-block-end: 12px solid #2a3a52;
 			top: 1px;
 			width: 381px;
+
+			@media (max-width: 800px) {
+				width: 266px;
+			}
 			
 		}
 		  
@@ -162,6 +175,10 @@ Mixins
 	.main-content {
 		padding-top: 24px;
 		padding-left: 8%;
+
+		@media (max-width: 800px) {
+			padding-top: 20px;
+		}
 
 		.skills-ed {
 			display: flex;
@@ -239,6 +256,10 @@ Mixins
     				padding-top: 8px;
 					padding-bottom: 8px;
 					font-weight: bold;
+
+					@media (max-width: 800px) {
+						width: 65%;
+					}
 					
 					h3 {
 
@@ -269,6 +290,10 @@ Mixins
 
 				.two {
 					width: 30%;
+
+					@media (max-width: 800px) {
+						width: 33%;
+					}
 				}
 			}
 
@@ -286,6 +311,10 @@ Mixins
 		flex-direction: column;
 		height: 1014px;
 
+		@media (max-width: 800px) {
+			height: 1134px;
+		}
+
 		.img-section {
 			text-align: center;
 			padding-top: 20px;
@@ -299,6 +328,8 @@ Mixins
 
 			#about-me{
 				
+				padding-top: 20px;
+
 				h2 {
 					text-decoration: underline;
 					color: white;
@@ -312,7 +343,7 @@ Mixins
 
 				p {
 					color: white;
-					font-size: 17px;
+					font-size: 19px;
 					line-height: 19px;
 					padding-right: 10%;
 				}
@@ -322,13 +353,18 @@ Mixins
 
 				display: flex;
 				flex-direction: column;
+				padding-top: 30px;
 
 				h2 {
 					text-decoration: underline;
 					color: white;
 					font-size: 25px;
 					padding-bottom: 4%;
-					padding-top: 15px;
+					padding-top: 100px;
+
+					@media (max-width: 800px) {
+						padding-top: 70px;
+					}
 				}
 
 				h3 {

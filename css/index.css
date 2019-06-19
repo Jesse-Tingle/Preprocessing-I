@@ -169,6 +169,12 @@ Mixins
   justify-content: space-around;
   width: 31%;
 }
+@media (max-width: 500px) {
+  .container header nav {
+    flex-direction: column;
+    width: 12%;
+  }
+}
 .container header nav a {
   -moz-transition: border-bottom-color 0.25s ease-in-out;
   -webkit-transition: border-bottom-color 0.25s ease-in-out;
@@ -190,6 +196,11 @@ Mixins
 .container .intro h1 {
   font-size: 125px;
 }
+@media (max-width: 800px) {
+  .container .intro h1 {
+    font-size: 100px;
+  }
+}
 .container .intro h2 {
   font-size: 30px;
 }
@@ -208,6 +219,11 @@ Mixins
   top: 1px;
   width: 381px;
 }
+@media (max-width: 800px) {
+  .container .intro .fancy span:after {
+    width: 266px;
+  }
+}
 .container .intro .fancy span:before {
   right: 100%;
   margin-right: 15px;
@@ -219,6 +235,11 @@ Mixins
 .container .main-content {
   padding-top: 24px;
   padding-left: 8%;
+}
+@media (max-width: 800px) {
+  .container .main-content {
+    padding-top: 20px;
+  }
 }
 .container .main-content .skills-ed {
   display: flex;
@@ -279,6 +300,11 @@ Mixins
   padding-bottom: 8px;
   font-weight: bold;
 }
+@media (max-width: 800px) {
+  .container .main-content #work-history .job .years {
+    width: 65%;
+  }
+}
 .container .main-content #work-history .job .years .vl {
   border-left: 2px solid #2a3a52;
 }
@@ -299,6 +325,11 @@ Mixins
 .container .main-content #work-history .job .two {
   width: 30%;
 }
+@media (max-width: 800px) {
+  .container .main-content #work-history .job .two {
+    width: 33%;
+  }
+}
 .container .headerimg {
   height: 250px;
 }
@@ -308,6 +339,11 @@ Mixins
   display: flex;
   flex-direction: column;
   height: 1014px;
+}
+@media (max-width: 800px) {
+  .container .left-background-section {
+    height: 1134px;
+  }
 }
 .container .left-background-section .img-section {
   text-align: center;
@@ -319,6 +355,9 @@ Mixins
   padding-left: 4%;
   padding-right: 10%;
 }
+.container .left-background-section .sidebar-content #about-me {
+  padding-top: 20px;
+}
 .container .left-background-section .sidebar-content #about-me h2 {
   text-decoration: underline;
   color: white;
@@ -327,20 +366,26 @@ Mixins
 }
 .container .left-background-section .sidebar-content #about-me p {
   color: white;
-  font-size: 17px;
+  font-size: 19px;
   line-height: 19px;
   padding-right: 10%;
 }
 .container .left-background-section .sidebar-content #contact {
   display: flex;
   flex-direction: column;
+  padding-top: 30px;
 }
 .container .left-background-section .sidebar-content #contact h2 {
   text-decoration: underline;
   color: white;
   font-size: 25px;
   padding-bottom: 4%;
-  padding-top: 15px;
+  padding-top: 100px;
+}
+@media (max-width: 800px) {
+  .container .left-background-section .sidebar-content #contact h2 {
+    padding-top: 70px;
+  }
 }
 .container .left-background-section .sidebar-content #contact .fa {
   line-height: 40px;
